@@ -63,12 +63,12 @@
   <footer>
     <p>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
       <div id="tickets">
-        <img src="assets/quinta.svg" alt="">
-        <img src="assets/sexta.svg" alt="">
-        <img src="assets/sabado.svg" alt="">
-        <img src="assets/domingo.svg" alt="">
+        <img src="assets/quinta.svg" alt="" id="quinta" onclick="selectCard('#quinta')">
+        <img src="assets/sexta.svg" alt="" id="sexta" onclick="selectCard('#sexta')">
+        <img src="assets/sabado.svg" alt="" id="sabado" onclick="selectCard('#sabado')">
+        <img src="assets/domingo.svg" alt="" id="domingo" onclick="selectCard('#domingo')">
 
-        <button>GARANTA O SEU!</button>  
+        <button onclick="showSelectedCards()">GARANTA O SEU!</button>  
       </div>
     </footer>
 

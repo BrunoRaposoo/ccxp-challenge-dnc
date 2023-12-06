@@ -4,6 +4,7 @@ const minuto = window.document.getElementById('minuto')
 const segundo = window.document.getElementById('segundo')
 
 const launch = '05 dec 2024'
+const ingressos = []
 
 function CountDown() {
   const launchDate = new Date(launch)
@@ -27,3 +28,17 @@ function TimeFormat(time) {
 
 CountDown()
 setInterval(CountDown, 1000)
+
+function selectCard(selector) {
+  var element = document.querySelector(selector)
+  element.classList.toggle('card-selected')
+  if(ingressos.includes(selector)) {
+    ingressos.pop(selector)
+  } else {
+    ingressos.push(selector)
+  }
+}
+
+showSelectedCards = () => {
+  (ingressos.length > 0 ? alert('Ingressos selecionados: ' + ingressos) : 'Nenhum ingresso foi selecionado')
+}

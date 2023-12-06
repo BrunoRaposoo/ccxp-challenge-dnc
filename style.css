@@ -154,6 +154,11 @@ footer p {
   transition-duration: 200ms;
 }
 
+.card-selected {
+  filter: brightness(2);
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 728px) {
   #main-content {
     display: flex;
