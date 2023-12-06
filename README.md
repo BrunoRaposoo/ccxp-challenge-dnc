@@ -22,7 +22,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Desafio do curso de formação em tecnologia da DNC para desenvolver uma página web usada na divulgação da próxima edição da CCXP.
+Desafio do curso de formação em tecnologia da DNC para desenvolver uma página web usada na divulgação da próxima edição da CCXP. <br> <br>
+Para acessar o projeto clique [AQUI](https://unrivaled-hummingbird-9411f4.netlify.app/)
 
 ## 🔖 Layout
 
