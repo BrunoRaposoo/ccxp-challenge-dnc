@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 100px;
+  background-color: #FFD900;
+  font-family: 'Teko', sans-serif;
+  line-height: 1;
+}
+
+#header-title {
+  padding: 27px 58px;
+}
+
+header h1 {
+  color: #000;
+  font-size: 52px;
+  font-family: 'Teko', sans-serif;
+  line-height: 1;
+}
+
+header span {
+  color: #FFF;
+  line-height: 1;
+}
+
+header p {
+  line-height: 1;
+  transform: translateY(-10px);
+  font-size: 16.5px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+#main-content {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#description {
+  height: 684px;
+  width: 802px;
+  background-color: #514988;
+  text-align: center;
+  
+  padding-top: 30px;
+  padding-right: 68px;
+  padding-left: 58px;
+}
+
+#description h1 {
+  font-size: 70px;
+  color: #F3C61F;
+}
+
+#description h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFF;
+  margin-top: 24px;
+}
+
+#description p {
+  margin-top: 72px;
+  font-size: 24px;
+  color: #FFF;
+  line-height: 34px;
+  font-weight: lighter;
+}
+
+#timer-video {
+  height: 684px;
+
+  padding-top: 30px;
+  padding-right: 68px;
+  padding-left: 58px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  gap: 50px;
+
+  text-align: center;
+}
+
+.calender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 700;
+  color: #514988;
+}
+
+#pink-p {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #E33881;
+}
+
+footer p {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #F3C61F;
+
+  margin: 15px 0 15px 90px;
+}
+
+#tickets {
+  margin-left: 80px;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+}
+
+#tickets img:hover {
+  transform: scale(1.05);
+  transition-duration: 200ms;
+}
+
+#tickets button {
+  background-color: #514988;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51px;
+  border: none;
+  border-radius: 20px;
+
+  color: #FFF;
+  text-align: center;
+
+  width: 596px;
+  height: 148px;
+  margin-left: 120px;
+  cursor: pointer;
+}
+
+#tickets button:hover {
+  color: #F3C61F;
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  transition-duration: 200ms;
+}
+
+@media screen and (max-width: 728px) {
+  #main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #description {
+    height: auto  ;
+    width: 100%;
+    background-color: #514988;
+    text-align: center;
+    
+    padding: 20px;
+  }
+
+  #description h1 {
+    font-size: 38px;
+    color: #F3C61F;
+  }
+  
+  #description h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 24px;
+  }
+  
+  #description p {
+    margin-top: 42px;
+    font-size: 18px;
+    color: #FFF;
+    line-height: 34px;
+    font-weight: lighter;
+  }
+
+  #timer-video {
+    height: auto;
+    padding: 16px;
+  }
+  
+  .countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+  
+    text-align: center;
+  }
+  
+  .calender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #514988;
+  }  
+
+  #pink-p {
+    font-size: 14px;
+    line-height: 36px;
+    color: #E33881;
+  }
+
+  #timer-video video {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #F3C61F;
+    text-align: center;
+  
+    margin: 15px 20px 15px 20px;
+  }
+  
+  #tickets {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, auto);
+    gap: 12px;
+    align-items: center;
+  }
+
+  #tickets img {
+    width: 100%;
+  }
+  
+  #tickets button {
+    background-color: #514988;
+    font-size: 20px;
+    
+    width: 300px;
+    height: 60px;
+    margin-left: 0px;
+    margin-top: 24px;
+    text-align: center;
+    cursor: pointer;
+  }  
+}
